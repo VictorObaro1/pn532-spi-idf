@@ -43,7 +43,7 @@ Add as a dependency in your project's `idf_component.yml`:
 
 ```yaml
 dependencies:
-  <your-github-username>/pn532-spi-idf: "^1.0.0"
+  VictorObaro1/pn532-spi-idf: "^1.0.0"
 ```
 
 Or clone directly into your project's `components/` folder.
