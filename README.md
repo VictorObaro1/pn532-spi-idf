@@ -1,5 +1,7 @@
 # pn532-spi-idf
 
+[![Component Registry](https://components.espressif.com/components/victorobaro1/pn532-spi-idf/badge.svg)](https://components.espressif.com/components/victorobaro1/pn532-spi-idf)
+
 A native **ESP-IDF** SPI driver for the PN532 NFC/RFID module — no Arduino, no `Adafruit_PN532` dependency, just direct `driver/spi_master.h` and `driver/gpio.h` calls.
 
 Built while developing an ESP32-S3-based MIFARE DESFIRE EV2 card reader that reads MIFARE DESFire cards over SPI. This repo is the transport-layer driver, extracted and open-sourced on its own.
