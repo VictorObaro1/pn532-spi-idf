@@ -1,6 +1,6 @@
 # Contributing to pn532-spi-idf
 
-Thanks for considering a contribution — this started as a driver extracted from a real transit-validator project, and the goal is to make the SPI transport layer for the PN532 something the wider ESP-IDF community can rely on and build on.
+Thanks for considering a contribution, this started as a driver extracted from a real MIFARE DESFIRE EV2 Card reader project, and the goal is to make the SPI transport layer for the PN532 something the wider ESP-IDF community can rely on and build on.
 
 ## Getting set up
 

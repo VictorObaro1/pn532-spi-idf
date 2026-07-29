@@ -14,7 +14,7 @@ tags:
   - esp32
   - esp32-s3
 dependencies:
-  idf: ">=5.0"
+  idf: "6.0"
 targets:
   - esp32s3
 # Only esp32s3 has been validated on real hardware so far.
