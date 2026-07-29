@@ -1,0 +1,22 @@
+version: "1.0.0"
+description: "ESP-IDF native SPI driver for the PN532 NFC/RFID module — direct register-level SPI communication, no Arduino dependency."
+url: "https://github.com/VictorObaro1/pn532-spi-idf"
+repository: "https://github.com/VictorObaro1/pn532-spi-idf.git"
+documentation: "https://github.com/VictorObaro1/pn532-spi-idf/blob/main/README.md"
+issues: "https://github.com/VictorObaro1/pn532-spi-idf/issues"
+maintainers:
+  - "Victor Obaro-Ukodie emadivictor@gmail.com"
+tags:
+  - nfc
+  - pn532
+  - rfid
+  - spi
+  - esp32
+  - esp32-s3
+dependencies:
+  idf: ">=5.0"
+targets:
+  - esp32s3
+# Only esp32s3 has been validated on real hardware so far.
+# The driver only uses standard driver/gpio.h and driver/spi_master.h APIs,
+# so other ESP32 targets should work — add them here once tested and confirmed.

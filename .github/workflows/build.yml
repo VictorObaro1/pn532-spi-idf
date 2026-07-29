@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build examples/read_uid (ESP32-S3)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        idf_ver: ["release-v6.0"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build with ESP-IDF ${{ matrix.idf_ver }}
+        uses: espressif/esp-idf-ci-action@v1
+        with:
+          esp_idf_version: ${{ matrix.idf_ver }}
+          target: esp32s3
+          path: examples/read_uid
